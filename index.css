@@ -6,6 +6,7 @@
 
 body {
   background-color: paleturquoise;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #calculadora {
@@ -29,11 +30,13 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  overflow: hidden;
 }
 
-.tela span {
+.tela p {
   color: #fff;
   font-size: 2em;
+  letter-spacing: -3px;
 }
 
 .container-botoes {
