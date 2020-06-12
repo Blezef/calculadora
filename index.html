@@ -1,134 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora</title>
 
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div id="calculadora">
-      <div class="tela">
-        <span id="resultado">0</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div id="calculadora">
+    <div class="tela">
+      <span id="resultado">0</span>
+    </div>
+    <div class="container-botoes">
+      <div class="linha1">
+        <button type="button" class="botao" id="botao1" onclick="obtemNum(this.id)">
+          1
+        </button>
+        <button type="button" class="botao" id="botao2" onclick="obtemNum(this.id)">
+          2
+        </button>
+        <button type="button" class="botao" id="botao3" onclick="obtemNum(this.id)">
+          3
+        </button>
+        <button type="button" class="botao" onclick="">+</button>
       </div>
-      <div class="container-botoes">
-  
-          <div class="linha1">
-              <button
-                type="button"
-                class="botao"
-                id="botao1"
-                onclick="obtemNum(this.id)"
-              >
-                1
-              </button>            
-              <button
-                type="button"
-                class="botao"
-                id="botao2"
-                onclick="obtemNum(this.id)"
-              >
-                2
-              </button>
-              <button
-                type="button"
-                class="botao"
-                id="botao3"
-                onclick="obtemNum(this.id)"
-              >
-                3
-              </button>
-              <button type="button" class="botao" onclick="">+</button>
-          </div>
 
-          <div class="linha2">
-              <button
-                type="button"
-                class="botao"
-                id="botao4"
-                onclick="obtemNum(this.id)"
-              >
-                4
-              </button>
-              <button
-                type="button"
-                class="botao"
-                id="botao5"
-                onclick="obtemNum(this.id)"
-              >
-                5
-              </button>
-              <button
-                type="button"
-                class="botao"
-                id="botao6"
-                onclick="obtemNum(this.id)"
-              >
-                6
-              </button>
-            
-            
-              <button type="button" class="botao" onclick="obtemNum()">
-                -
-              </button>
-            
-          </div>
+      <div class="linha2">
+        <button type="button" class="botao" id="botao4" onclick="obtemNum(this.id)">
+          4
+        </button>
+        <button type="button" class="botao" id="botao5" onclick="obtemNum(this.id)">
+          5
+        </button>
+        <button type="button" class="botao" id="botao6" onclick="obtemNum(this.id)">
+          6
+        </button>
 
-          <div class="linha3">
-            <li>
-              <button
-                type="button"
-                class="botao"
-                id="botao7"
-                onclick="obtemNum(this.id)"
-              >
-                7
-          </button>                   
-            
-          </button>            
-              <button
-                type="button"
-                class="botao"
-                id="botao8"
-                onclick="obtemNum(this.id)"
-              >
-                8
-              </button>
-              <button
-                type="button"
-                class="botao"
-                id="botao9"
-                onclick="obtemNum(this.id)"
-              >
-                9
-              </button>
-              <button type="button" class="botao" onclick="">*</button>
-            </li>
-          </div>
 
-          <div class="linha4">
-            <li>
-              <button
-                type="button"
-                class="botao"
-                id="botao0"
-                onclick="obtemNum(this.id)"
-              >
-                0
-              </button>
-            </li>
-            <li>
-              <button type="button" class="botao" onclick="mostrarSoma()">
-                =
-              </button>
-            </li>
-            <li>
-              <button type="button" class="botao" onclick="">/</button>
-            </li>
-          </div>
-        </ul>
+        <button type="button" class="botao" onclick="obtemNum()">
+          -
+        </button>
+
+      </div>
+
+      <div class="linha3">
+        <button type="button" class="botao" id="botao7" onclick="obtemNum(this.id)">
+          7
+        </button>
+        </button>
+        <button type="button" class="botao" id="botao8" onclick="obtemNum(this.id)">
+          8
+        </button>
+        <button type="button" class="botao" id="botao9" onclick="obtemNum(this.id)">
+          9
+        </button>
+        <button type="button" class="botao" onclick="">*</button>
+      </div>
+
+      <div class="linha4">
+        <button type="button" class="botao" id="botao0" onclick="obtemNum(this.id)">
+          0
+        </button>
+        <button type="button" class="botao" onclick="mostrarSoma()">
+          =
+        </button>
+        <button type="button" class="botao" onclick="">/</button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
