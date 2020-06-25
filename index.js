@@ -8,12 +8,18 @@ function obtemNum(botao) {
 }
 
 function mostrarResultado() {
-  var arraySoma = concatenacao.split("+");
-  var soma = 0;
+  return (resultado.innerHTML = eval(resultado.innerHTML));
+}
 
-  for (i = 0; i < arraySoma.length; i++) {
-    soma += parseInt(arraySoma[i]);
-  }
+function limpar() {
+  resultado.innerHTML = "";
+  concatenacao = "";
+}
 
-  return (resultado.innerHTML = soma);
+function apagar() {
+  resultado.innerHTML = resultado.innerHTML.substring(
+    0,
+    resultado.innerHTML.length - 1
+  );
+  concatenacao = concatenacao.substring(0, concatenacao.length - 1);
 }
