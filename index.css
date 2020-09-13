@@ -23,7 +23,7 @@ body {
   height: 150px;
   background-color: rgba(0, 0, 0, 0.418);
   height: 30%;
-  padding: 5px;
+  padding: 8px 8px;
   width: 100%;
   border: 1px solid #000;
   display: flex;
@@ -38,10 +38,6 @@ body {
   letter-spacing: -3px;
 }
 
-.container-botoes {
-  height: 70%;
-}
-
 .linha1,
 .linha2,
 .linha3,
@@ -52,8 +48,15 @@ body {
   height: calc(100% / 4);
 }
 
+.linha1 .botao,
+.linha2 .botao,
+.linha3 .botao,
+.linha4 .botao {
+  border-bottom: none;
+}
+
 .botao:nth-child(1n + 2) {
-  margin-left: 1px;
+  border-left: none;
 }
 
 .botao {
@@ -62,7 +65,24 @@ body {
   font-size: 1.5em;
   border: 1px solid #000;
   border-radius: 0;
-  margin-bottom: 1px;
   outline: none;
   cursor: pointer;
+  padding: 16px;
+}
+
+#botaoC,
+#botaoDel {
+  width: 37.5%;
+}
+
+#botaoSoma {
+  width: 25%;
+}
+
+#botao0 {
+  width: 75%;
+}
+
+#botaoigual {
+  width: 25%;
 }
